@@ -3,6 +3,7 @@ import java.util.*;
 public class DaySo {
     private int SoLuong;
     private int[] Mang;
+    private int TrungBinh=0;
 
     public void Nhap() {
         Scanner input = new Scanner(System.in);
@@ -45,6 +46,20 @@ public class DaySo {
     public void Sort() {
         Arrays.sort(this.Mang);
     }
-    //test git commit
+
+    public void Average(){
+        for (int i=0;i<this.SoLuong;i++)
+            this.TrungBinh+=this.Mang[i];
+        this.TrungBinh=this.TrungBinh/this.SoLuong;
+    }
+
+    public int PTGanAvg(){
+        int min=Math.abs(this.Mang[0]-this.TrungBinh);
+        for (int i=1;i<this.SoLuong;i++){
+            int tam = Math.abs(this.Mang[i]-this.TrungBinh);
+            if (tam<min) min=tam;
+        }
+        return min;
+    }
 }
 

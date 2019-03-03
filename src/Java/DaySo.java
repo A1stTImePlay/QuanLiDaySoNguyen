@@ -46,7 +46,3 @@ public class DaySo {
         Arrays.sort(this.Mang);
     }
 
-    public int GiaTriTrungBinh(){
-        for
-    }
-}

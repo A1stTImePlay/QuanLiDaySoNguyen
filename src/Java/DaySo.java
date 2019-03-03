@@ -45,5 +45,6 @@ public class DaySo {
     public void Sort() {
         Arrays.sort(this.Mang);
     }
+    //test git commit
 }
 

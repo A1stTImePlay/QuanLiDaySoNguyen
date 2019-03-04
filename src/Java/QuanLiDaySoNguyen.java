@@ -20,7 +20,7 @@ public class QuanLiDaySoNguyen {
         System.out.println("Mang sau khi sap tang: ");
         array.Xuat();
         System.out.println();
-        
+
         array.Average();
         int i=array.PTGanAvg();
         System.out.println("Vi tri phan tu gan bang trung binh nhat: "+ i);
